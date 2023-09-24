@@ -7,7 +7,7 @@ docker build . -t noip-docker:debian
 ```
 ## Use
 ``` bash
-docker run -d --name --restart=always noipduc noip-duc:debian -g 'you_domain' --username 'your_username' --password 'your_password' 
+docker run -d --name noipduc --restart=always noip-duc:debian -g 'you_domain' --username 'your_username' --password 'your_password' 
 ```
 ![logs](logs.png)
 看看日志成功了，默认每5分钟检查一次。
